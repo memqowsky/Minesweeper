@@ -278,7 +278,6 @@ class board:
     def flagCheck(): # sprawdza ilość flag na mapie. Jeśli oznaczymy wszystkie - wygrywamy
         if board.flagsStanded > 9:
             if board.bombBoard == board.fBoard:
-                #print("Wygrales")
                 msb.showinfo("Info", "Wygrałeś! Gratulacje.") # wywołanie okna dialogowego
             
     def restart():
