@@ -73,7 +73,6 @@ class board:
                 board.vBoard[x][y] = "bomb"   
                 board.bombBoard[x][y] = 1
                 bombsLeft -= 1
-           #print("Bomba nr: ", bombsLeft, ". X: ", x, ", Y: ", y)
 
            
     def checkNumbers(self): # ta funkcja napełnia pola w tablicy vBoard liczbą odzwierciedlającą ilość bomb, które leżą obok tych pól
@@ -148,9 +147,6 @@ class board:
             board.cBoard[board.buttonX(button)][board.buttonY(button)] = 1 # tutaj oznaczamy ze button jest juz klikniety
 
             board.checkAutoClick(board.buttonX(button),board.buttonY(button)) # wywołujemy autoClick() czyli funkcje ktora sprawdza czy obok nie ma bomb, by wywołać autoClick()
-
-        #print("x: ",board.buttonX(button),"y: ",board.buttonY(button))
-
 
         
     def checkAutoClick(x,y): # check auto click ma sprawdzac czy nie ma bomby i wywolywac autoclick
